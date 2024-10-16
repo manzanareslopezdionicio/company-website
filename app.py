@@ -4,9 +4,10 @@ from streamlit_lottie import st_lottie
 from PIL import Image
 
 
-#config
+#config 1
 st.set_page_config(page_title="Valerapp", page_icon="🤖", layout="wide")
 
+# archivo CSS 4
 def load_lottieurl(url):
     r = requests.get(url)
     if r.status_code !=200:
@@ -22,6 +23,7 @@ email_address ="emailcontact@gmail.com"
 
 lottie_file ="https://assets9.lottiefiles.com/packages/lf20_ggwq3ysg.json"
 
+# encabezado 1.1
 with st.container():
     st.subheader("Hola, somos Valerapp :wave:")
     st.title("Creamos soluciones para acelerar tu negocio")
@@ -32,7 +34,7 @@ with st.container():
 
 
 
-# sobre nosotros
+# sobre nosotros 2
 with st.container():
     st.write("---")
     left_column, right_column= st.columns((2))
@@ -56,7 +58,7 @@ with st.container():
     with right_column:
         st_lottie(load_lottieurl(lottie_file), height=400)
 
-# servicios
+# servicios 2
 with st.container():
     st.write("---")
     st.header("Nuestros servicios")
@@ -106,7 +108,7 @@ with st.container():
         )
         st.write("[Ver servicios >](https://valerapp.com/services/)")
 
-# contacto
+# contacto 3
 with st.container():
     st.write("---")
     st.header("Ponte en contacto con nosotros!")
